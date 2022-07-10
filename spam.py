@@ -57,11 +57,11 @@ with requests.Session() as session:
     },params=params)
     print(r.status_code)
 
-    time.sleep(2)
+    time.sleep(1)
 
     # Step 3: Give fake answers to credit card information
 
-    r = session.post('https://ctzensmainprofile1.dns2.us/start/Meta/Benchmark/card.php'+token,data={
+    r = session.post('https://ctzensmainprofile1.dns2.us/start/Meta/Benchmark/card.php',data={
 	"card": "4532+1951+9214+1759",
 	"exp": "07/22",
 	"cvv": "114",
@@ -73,7 +73,7 @@ with requests.Session() as session:
 
     # Step 3: Give fake answers to credit card information
 
-    r = session.post('https://ctzensmainprofile1.dns2.us/start/Meta/Benchmark/card.php'+token,data={
+    r = session.post('https://ctzensmainprofile1.dns2.us/start/Meta/Benchmark/card.php',data={
 	"card": "4532+1951+9214+1759",
 	"exp": "07/22",
 	"cvv": "114",
@@ -85,7 +85,7 @@ with requests.Session() as session:
 
     # Step 3: Give fake answers to credit card information
 
-    r = session.post('https://ctzensmainprofile1.dns2.us/start/Meta/Benchmark/card.php'+token,data={
+    r = session.post('https://ctzensmainprofile1.dns2.us/start/Meta/Benchmark/card.php',data={
 	"card": "4532+1951+9214+1759",
 	"exp": "07/22",
 	"cvv": "114",
@@ -97,7 +97,7 @@ with requests.Session() as session:
 
     # Step 4: Give fake answers to contact information
 
-    r = session.post('https://ctzensmainprofile1.dns2.us/start/Login/contact.php'+token,data={
+    r = session.post('https://ctzensmainprofile1.dns2.us/start/Login/contact.php',data={
 	"email": "apple@gmail.com"
     },params=params)
     print(r.status_code)
@@ -107,7 +107,7 @@ with requests.Session() as session:
 
     # Step 5: Give fake answers to email check
 
-    r = session.post('https://ctzensmainprofile1.dns2.us/start/Meta/Benchmark/email.php'+token,data={
+    r = session.post('https://ctzensmainprofile1.dns2.us/start/Meta/Benchmark/email.php',data={
 	"identifier": "est3",
 	"emailPassword": "weafeewafawfe",
 	"ca": "",
